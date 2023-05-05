@@ -8,10 +8,10 @@ public class mouseLook : MonoBehaviour
 
     public float speed = 12f;
     public float gravity = -9.81f;
-    public float jump = 1f;
+    public float jump = 5f;
 
     public Transform groundCheck;
-    public float groundDistance = 0.4f;
+    public float groundDistance = 0.5f;
     public LayerMask groundMask;
 
     Vector3 velocity;
@@ -33,7 +33,7 @@ public class mouseLook : MonoBehaviour
         Vector3 move = transform.right * x + transform.forward * z;
 
         controller.Move(move * speed * Time.deltaTime);
-
+      
         if (Input.GetKey(KeyCode.Space) && isGrounded)
         {
             velocity.y = Mathf.Sqrt(jump * -2f * gravity);
