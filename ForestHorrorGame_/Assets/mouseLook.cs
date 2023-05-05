@@ -34,7 +34,7 @@ public class mouseLook : MonoBehaviour
 
         controller.Move(move * speed * Time.deltaTime);
 
-        if (Input.GetButtonDown("Jump") && isGrounded)
+        if (Input.GetKey(KeyCode.Space) && isGrounded)
         {
             velocity.y = Mathf.Sqrt(jump * -2f * gravity);
         }
