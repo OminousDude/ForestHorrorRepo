@@ -6,7 +6,7 @@ public class DayNightCycle : MonoBehaviour
 {
     Vector3 rotation = Vector3.zero;
 
-    float degreesPerSec = 15;
+    float degreesPerSec = 3;
 
     void Update()
     {
