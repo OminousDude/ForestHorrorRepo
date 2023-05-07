@@ -21,8 +21,11 @@ public class Chase : MonoBehaviour
 
     void Update()
     {
-        if(time.eulerAngles.x > 180)
+        if (time.eulerAngles.x > 180)
+        {
             nav.SetDestination(target.position);
+            animator.SetBool("Crawl", true);
+        }   
     }
 
     private void OnTriggerEnter(Collider other)
