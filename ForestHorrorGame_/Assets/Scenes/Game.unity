@@ -108,10 +108,10 @@ NavMeshSettings:
     agentTypeID: 0
     agentRadius: 4
     agentHeight: 3
-    agentSlope: 50
-    agentClimb: 3
+    agentSlope: 60
+    agentClimb: 5
     ledgeDropHeight: 5
-    maxJumpAcrossDistance: 100
+    maxJumpAcrossDistance: 10
     minRegionArea: 2
     manualCellSize: 0
     cellSize: 1.3333334
@@ -122,7 +122,7 @@ NavMeshSettings:
     preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
-  m_NavMeshData: {fileID: 23800000, guid: e02ed590ceaa78f4ea9ae3c0bf5a2af7, type: 2}
+  m_NavMeshData: {fileID: 23800000, guid: ce3d9a2594da8df46bcb70574c406a25, type: 2}
 --- !u!1 &13877723
 GameObject:
   m_ObjectHideFlags: 0
@@ -2346,7 +2346,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1112091889}
   m_LocalRotation: {x: 0.17752667, y: -0.38646558, z: 0.0760743, w: 0.90185446}
-  m_LocalPosition: {x: -397.5923, y: -22.129395, z: -664.93097}
+  m_LocalPosition: {x: -396.62512, y: -22.129395, z: -665.1504}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4263,7 +4263,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1766091456}
   m_LocalRotation: {x: 0.32326594, y: -0, z: -0, w: 0.94630814}
-  m_LocalPosition: {x: -395.9756, y: -22.129395, z: -664.51746}
+  m_LocalPosition: {x: -396.36548, y: -22.129395, z: -664.92676}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4625,7 +4625,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1934927337}
   m_LocalRotation: {x: 0.32326594, y: -0, z: -0, w: 0.94630814}
-  m_LocalPosition: {x: -400.9477, y: -19.54217, z: -665.2732}
+  m_LocalPosition: {x: -401.15244, y: -19.54217, z: -665.2732}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5455,6 +5455,7 @@ GameObject:
   - component: {fileID: 6645823806152478460}
   - component: {fileID: 5366159434318933128}
   - component: {fileID: 7202271456500851218}
+  - component: {fileID: 7202271456500851219}
   m_Layer: 3
   m_Name: Cylinder
   m_TagString: Untagged
@@ -5569,6 +5570,20 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!64 &7202271456500851219
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3655000509196114637}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 2534964839176971238, guid: ecd8c12dfc347c54a82398d109fdb69c, type: 3}
 --- !u!33 &7754171745630760746
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -5588,6 +5603,7 @@ GameObject:
   - component: {fileID: 8632055958491121833}
   - component: {fileID: 7754171745630760746}
   - component: {fileID: 6317578924579126069}
+  - component: {fileID: 8632055958491121834}
   m_Layer: 0
   m_Name: Sphere
   m_TagString: Untagged
@@ -5610,3 +5626,17 @@ Transform:
   m_Father: {fileID: 543450652989897124}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!64 &8632055958491121834
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8204707763682099673}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 4711208715938537054, guid: 14560f281cf250a48a8e39fb0af03392, type: 3}
